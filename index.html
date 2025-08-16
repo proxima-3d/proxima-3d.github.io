@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proxima-3D</title>
     <style>
+        /* Style the button container for spacing */
+.button-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Adds space between the buttons */
+}
+
+/* Style the buttons */
+.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #333; /* Dark grey background */
+    color: #e0e0e0;
+    text-decoration: none; /* Removes the underline from the hyperlink */
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid #555; /* A subtle border */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+    background-color: #555; /* Lighter grey on hover */
+    border-color: #888;
+}
         /* Set font, colors, and overall body style */
         body {
             font-family: 'Inter', sans-serif;
@@ -66,6 +92,10 @@
         <p>
             Proxmia 3D is a small 3D printing business. We currently have <strong>1</strong> printer, a Neptune 3 Pro.
         </p>
+        <div class="button-container">
+    <a href="ourprods.html" class="button">Explore</a>
+    <a href="info.html" class="button">Learn More</a>
+</div>
     </div>
 
 </body>
