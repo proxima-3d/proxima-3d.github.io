@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Site</title>
+    <style>
+        /* Set font, colors, and overall body style */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212; /* Fallback for when the image doesn't load */
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            /* Use flexbox to center content vertically and horizontally */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Create a pseudo-element for the static image background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Place the background behind the content */
+            /* Using a static image of a nebula from Unsplash */
+            background-image: url('img.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.3; /* A little higher opacity for a static image to still be visible */
+        }
+
+        /* Style the main content container */
+        .container {
+            max-width: 800px;
+            padding: 2.5rem;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background, 70% opacity */
+            border-radius: 1rem;
+            text-align: center;
+        }
+
+        /* Style the heading and paragraph text */
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.25rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main content area -->
+    <div class="container">
+        <h1>Welcome to Proxima3D</h1>
+        <p>
+            Proxmia 3D is a small 3D printing business. We currently have <strong>1</strong> printer, a Neptune 3 Pro.
+        </p>
+    </div>
+
+</body>
+</html>
